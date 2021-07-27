@@ -108,7 +108,7 @@ class window(App):
 
             gamerun = random.randint(0, 10)
             formula2 = (int(self.txtinpu2.text) * 1.2)
-            if gamerun > 1:
+            if gamerun >= 1:
                 self.txtinpu1.text += "\n" + "Вы проиграли" + "\n"
                 self.balance0 -= int(formula2)
                 self.balance2.text = str(self.balance0)
@@ -118,15 +118,19 @@ class window(App):
                 self.balance2.text = str(self.balance0)
 
     def gameran2(self, instance):
-        if self.txtinpu2.text != "":
+        if self.txtinpu2.text != "" and int(self.txtinpu2.text) <= self.balance0:
+
             gamerun = random.randint(0, 10)
-            formula1 = ( int(self.txtinpu2.text) * 1.5)
-            if gamerun > 5:
-                self.txtinpu1.text += "\n" + "Вы проиграли" +  "\n"
+            formula1 = (int(self.txtinpu2.text) * 1.5)
+            if gamerun >= 5:
+                self.txtinpu1.text += "\n" + "Вы проиграли" + "\n"
+                self.balance0 -= int(formula1)
+                self.balance2.text = str(self.balance0)
             else:
                 self.txtinpu1.text += "\n" + "Вы выиграли" + "\n" + str(formula1) + "\n"
+                self.balance0 += int(formula1)
+                self.balance2.text = str(self.balance0)
 
 
 if __name__=="__main__":
     window().run()
-
