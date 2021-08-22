@@ -1,17 +1,32 @@
 {
-    "Russian":{
+    "russian":{
         "Window":{
             "gamelabel": "Казино",
             "gamelabel2": "Введите сумму денег",
-            "balance": "Баланс"
+            "balance": "Баланс",
+            "btn2": "вывести строку бд",
+            "btn3": "удалить строки из бд",
+            "btn4": "Почистить экраны",
+            "btn5": "Выбрать язык",
+            "gamebtn": "Шанс выиграть 60% \nkoef=1.2",
+            "gamebtn2": "Шанс выиграть 50% \nkoef=1.5",
+            "btn1": "Поменять цвет окна"
+
 
         }
     },
-    "English":{
+    "english":{
         "Window":{
             "gamelabel": "Casino",
             "gamelabel2": "enter the amount of money",
-            "balance": "balance"
+            "balance": "balance",
+            "btn2": "output the db string",
+            "btn3": "deleting rows from the database",
+            "btn4": "Clear the screens",
+            "btn5": "Select a language",
+            "gamebtn": "Chance to win 60% \nkoef=1.2",
+            "gamebtn2": "Chance to win 50% \nkoef=1.5",
+            "btn1": "Change the window color"
 
 }
     }
